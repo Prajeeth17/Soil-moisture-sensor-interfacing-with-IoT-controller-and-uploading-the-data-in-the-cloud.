@@ -144,11 +144,21 @@ allowing you to store up to 8 different
   delay(20000); // Wait 20 seconds to update the channel again
 }
 ```
-# CIRCUIT DIAGRAM:
-![image](https://github.com/AsinVardhini/Soil-moisture-sensor-interfacing-with-IoT-controller-and-uploading-the-data-in-the-cloud./assets/119417735/b4e6745c-6851-400d-99df-2944c9d28921)
+# PAYLOAD FORMATTER:
+```C
+function Decoder(bytes,port){
+var Temperature=(bytes[0] << 8 || bytes[1])/100;
+var Humidity=(bytes[2] << 8 || bytes[2])/100;
+return{
+Temperature:Temperature,
+Humidity:Humidity
+};
+}
+```
 
 # OUTPUT:
-![image](https://github.com/AsinVardhini/Soil-moisture-sensor-interfacing-with-IoT-controller-and-uploading-the-data-in-the-cloud./assets/119417735/f87ae950-c4ac-4acb-9eb4-dd805b4bd609)
+
+![WhatsApp Image 2024-05-16 at 14 56 08_117bc103](https://github.com/Prajeeth17/Soil-moisture-sensor-interfacing-with-IoT-controller-and-uploading-the-data-in-the-cloud./assets/120513885/ba035e3e-2bc4-40fc-a30d-84063cc32011)
 
 # RESULT:
 
