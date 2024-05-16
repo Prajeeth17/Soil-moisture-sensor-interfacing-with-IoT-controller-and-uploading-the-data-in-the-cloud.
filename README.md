@@ -1,6 +1,7 @@
-# Exp No:5 Soil moisture sensor interfacing with IoT controller and uploading the data in the cloud 
 ## Name: Prajeeth K T
 ## Reg. No: 212222110034
+
+# Exp No:5 Soil moisture sensor interfacing with IoT controller and uploading the data in the cloud 
 
 # AIM:
 To upload the Soil-moisture sensor value in the Things mate using Arduino controller.
